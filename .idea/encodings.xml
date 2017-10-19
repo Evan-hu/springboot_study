@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-bean" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-thymeleaf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_Druid" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_Druid2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_EnvironmentAware" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_bean" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_filterAndListener" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_freemarker" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_globalException" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_handlerInterceptor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_helloworld" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_jpa" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_runner" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_web" charset="UTF-8" />
+  </component>
+</project>

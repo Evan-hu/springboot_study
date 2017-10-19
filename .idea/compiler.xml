@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot-bean" />
+        <module name="springboot-thymeleaf" />
+        <module name="springboot-xml" />
+        <module name="springboot_bean" />
+        <module name="springboot_Druid" />
+        <module name="springboot_Druid2" />
+        <module name="springboot_EnvironmentAware" />
+        <module name="springboot_filterAndListener" />
+        <module name="springboot_freemarker" />
+        <module name="springboot_globalException" />
+        <module name="springboot_handlerInterceptor" />
+        <module name="springboot_helloworld" />
+        <module name="springboot_jpa" />
+        <module name="springboot_properties" />
+        <module name="springboot_runner" />
+        <module name="springboot_web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springboot-bean" target="1.7" />
+      <module name="springboot-thymeleaf" target="1.7" />
+      <module name="springboot-xml" target="1.7" />
+      <module name="springboot_bean" target="1.7" />
+      <module name="springboot_Druid" target="1.7" />
+      <module name="springboot_Druid2" target="1.7" />
+      <module name="springboot_EnvironmentAware" target="1.7" />
+      <module name="springboot_filterAndListener" target="1.7" />
+      <module name="springboot_freemarker" target="1.7" />
+      <module name="springboot_globalException" target="1.7" />
+      <module name="springboot_handlerInterceptor" target="1.7" />
+      <module name="springboot_helloworld" target="1.7" />
+      <module name="springboot_jpa" target="1.7" />
+      <module name="springboot_jsp" target="1.7" />
+      <module name="springboot_junit" target="1.7" />
+      <module name="springboot_properties" target="1.7" />
+      <module name="springboot_runner" target="1.7" />
+      <module name="springboot_study" target="1.7" />
+      <module name="springboot_web" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
