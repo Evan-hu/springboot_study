@@ -16,7 +16,7 @@ public class LiftOff implements Runnable {
     }
 
     public String status() {
-        return "#"+id+"("+(countDown > 0 ? countDown : "Liftoff!") + ").";
+        return "#"+id+"("+(countDown > 0 ? countDown : "Liftoff!") + ")." + Thread.currentThread().getName();
     }
 
     @Override
@@ -27,6 +27,7 @@ public class LiftOff implements Runnable {
 //        }
         for (int i=0; i<3; i++) {
             System.out.println(status());
+            System.out.println("Priority: " + Thread.currentThread().getPriority());
             Thread.yield();
         }
     }

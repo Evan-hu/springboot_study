@@ -1,7 +1,8 @@
 package com.learn.concurrent;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.*;
 
 /**
  * Created by Evan on 2017/10/16.
@@ -39,7 +40,7 @@ public class MainThread {
     }
 
     // use SingleThreadPool
-    public static void main(String[] args) {
+    public static void main5(String[] args) {
         ExecutorService e = Executors.newSingleThreadExecutor();
         for (int i=0; i<5; i++) {
             e.execute(new LiftOff());
@@ -47,4 +48,35 @@ public class MainThread {
         e.shutdown();
         System.out.println("The main method is over!");
     }
+
+    // use Callable interface
+    public static void main6(String[] args) {
+        ExecutorService e = Executors.newCachedThreadPool();
+        List<Future<String>> results = new ArrayList<Future<String>>();
+        for (int i=0; i<10; i++)
+            results.add(e.submit(new TaskWithResult(i)));
+        for (Future<String> future: results) {
+            try {
+                System.out.println(future.get());
+            } catch (Exception e1) {
+                e1.printStackTrace();
+            } finally {
+                e.shutdown();
+            }
+        }
+
+    }
+
+
+    // use daemons
+    public static void main(String[] args) throws InterruptedException {
+        for (int i=0; i<10; i++) {
+            Thread daemon = new Thread(new SimpleDaemons());
+            daemon.setDaemon(true);
+            daemon.start();
+        }
+        System.out.println("All daemons started");
+        TimeUnit.MICROSECONDS.sleep(175);
+    }
+
 }
