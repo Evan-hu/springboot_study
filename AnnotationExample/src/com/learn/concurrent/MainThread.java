@@ -1,7 +1,9 @@
 package com.learn.concurrent;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.*;
 
 /**
@@ -70,13 +72,15 @@ public class MainThread {
 
     // use daemons
     public static void main(String[] args) throws InterruptedException {
-        for (int i=0; i<10; i++) {
-            Thread daemon = new Thread(new SimpleDaemons());
-            daemon.setDaemon(true);
-            daemon.start();
-        }
-        System.out.println("All daemons started");
-        TimeUnit.MICROSECONDS.sleep(175);
+//        for (int i=0; i<10; i++) {
+//            Thread daemon = new Thread(new SimpleDaemons());
+//            daemon.setDaemon(true);
+//            daemon.start();
+//        }
+//        System.out.println("All daemons started");
+//        TimeUnit.MICROSECONDS.sleep(175);
+        Map m = new HashMap();
+        System.out.println(m.isEmpty());
     }
 
 }
