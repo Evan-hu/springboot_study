@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AnnotationExample/AllTest.iml" filepath="$PROJECT_DIR$/AnnotationExample/AllTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot&amp;ES/SpringBoot&amp;ES.iml" filepath="$PROJECT_DIR$/SpringBoot&amp;ES/SpringBoot&amp;ES.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-bean/springboot-bean.iml" filepath="$PROJECT_DIR$/springboot-bean/springboot-bean.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-thymeleaf/springboot-thymeleaf.iml" filepath="$PROJECT_DIR$/springboot-thymeleaf/springboot-thymeleaf.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-xml/springboot-xml.iml" filepath="$PROJECT_DIR$/springboot-xml/springboot-xml.iml" />

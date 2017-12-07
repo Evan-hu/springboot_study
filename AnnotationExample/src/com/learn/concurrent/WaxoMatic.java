@@ -3,6 +3,10 @@ package com.learn.concurrent;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 
 /**
  * Created by Evan on 2017/11/15.
@@ -10,17 +14,34 @@ import java.util.concurrent.TimeUnit;
 
 class Car {
     private boolean waxon = false;
+    private Lock lock = new ReentrantLock();
+    private Condition condition = lock.newCondition();
 
     public synchronized void waxed() {
-        System.out.println("wax over, waiting for buff");
+       /* System.out.println("wax over, waiting for buff");
         waxon = true; // ready to buff
-        notifyAll();
+        notifyAll();*/
+       lock.lock();
+       try {
+           waxon = true;
+           condition.signalAll();
+       } finally {
+           lock.unlock();
+       }
+
     }
 
     public synchronized void buffed() {
-        System.out.println("buff over, waiting for wax");
+        /*System.out.println("buff over, waiting for wax");
         waxon = false; // ready for another coat of wax
-        notifyAll();
+        notifyAll();*/
+        lock.lock();
+        try {
+            waxon = false;
+            condition.signalAll();
+        } finally {
+            lock.unlock();
+        }
     }
 
     public synchronized void waitForWaxing() throws InterruptedException {

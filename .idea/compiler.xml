@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="SpringBoot&amp;ES" />
         <module name="springboot-bean" />
         <module name="springboot-thymeleaf" />
         <module name="springboot-xml" />
@@ -25,6 +26,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="SpringBoot&amp;ES" target="1.7" />
       <module name="springboot-bean" target="1.7" />
       <module name="springboot-thymeleaf" target="1.7" />
       <module name="springboot-xml" target="1.7" />
